@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <!-- form yang digunakan untuk mengelola data dari input yang dilakukan oleh user
+  elemen-elemen form
+  1. 'input' untuk menginputkan sesuatu
+    <input type="">
+    a. 'text' untuk membuat text field
+    b. 'password' 
+    c. 'radio'
+    d. 'checkbox'
+    e. 'submit' / tombol
+    f. 'reset' / tombol
+    g. 'button' / tombol
+  2. 'textarea' untuk mengisikan komentar / pesan
+  3. 'select' digunakan untuk membuat dropdown
+  4. 'button' tombol untuk mengirim data
+  <button type="">
+    a. 'submit'
+    b. 'reset'
+    c. 'button'
+  5. 'label' untuk menandai sebuah elemen input
+  -->
+    <form>
+      <label for="username">Username : </label>
+      <input type="text" id="username" />
+       <br />
+      <label for="password">Password : </label>
+      <input type="password" id="password" />
+        <br />
+      <input type="radio" id="pria" name="jeniskelamin" /><label for="pria">Pria</label> 
+      <input type="radio" id="wanita" name="jeniskelamin" /><label for="wanita">Wanita</label>
+        <br />
+      <input type="checkbox" id="menyanyi" /><label for="menyanyi">Menyanyi</label> 
+      <input type="checkbox" id="Olahraga" /><label for="Olahraga">Olahraga</label> 
+      <input type="checkbox" id="Ngoding" /><label for="Ngoding">Ngoding</label>
+        <br />
+      <textarea></textarea>
+        <br>
+      <select>
+        <option>Bandung</option>
+        <option>Yogyakarta</option>
+        <option>Jakarta</option>
+      </select>
+        
+      <button type="submit">Kirim!
+
+
+    </form>
+  </body>
+</html>

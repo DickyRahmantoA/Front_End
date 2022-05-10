@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML tabel</title>
+  </head>
+  <body>
+    <!-- struktur tabel 
+  kotak kotak yang horizontal = baris
+  kotak kotak yang vertikal = kolom
+  lalu perpotongan antara baris dan kolom = cell/data
+  judul horizontal dan vertikal = header
+  -->
+
+    <!-- struktur tabel simple -->
+    <table border="1" cellspacing="0" cellpading="5">
+      <tr>
+        <td>baris 1, kolom 1</td>
+        <td>baris 1, kolom 2</td>
+      </tr>
+      <tr>
+        <td>baris 2, kolom 1</td>
+        <td>baris 2, kolom 2</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <!-- struktur tabel kompleks -->
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>kolom 1</th>
+          <th>kolom 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>baris 1</th>
+          <td>baris 1, kolom 1</td>
+          <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+          <th>baris 2</th>
+          <td>baris 2, kolom 1</td>
+          <td>baris 2, kolom 2</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+
+    <!-- atribut yang bisa digunakan di tabel
+  1. border digunakan untuk menambahkan garis di sekitar cell / menambahkan border "untuk di css"
+  2. cellspacing digunakan untuk menambahkan jarak antar cell "untuk di css"
+  3. cellpading digunakan untuk memberi luas pada sebuah cell "untuk di css"
+  4. colspan digunakan untuk menggabungkan 2 / lebih cell yang horizontal
+  5. rowspan digunakan untuk menggabungkan 2 / lebih cell yang vertikal
+  -->
+
+    <table border="1" cellspacing="0" cellpading="5">
+      <tr>
+        <td rowspan="3">rowspan 3</td>
+        <td colspan="2">colspan 2</td>
+      </tr>
+      <tr>
+        <td>2,2</td>
+        <td>2,3</td>
+      </tr>
+      <tr>
+        <td>3,2</td>
+        <td>3,3</td>
+      </tr>
+    </table>
+  </body>
+</html>
